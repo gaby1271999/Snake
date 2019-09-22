@@ -7,8 +7,11 @@ class Location {
 		Location(int x, int y);
 		~Location();
 
-		int getXPos();
-		int getYPos();
+		int & getXPos();
+		int & getYPos();
+
+		void setXPos(int x);
+		void setYPos(int y);
 
 		std::string toString() {
 			return std::to_string(getXPos()) + " " + std::to_string(getYPos());

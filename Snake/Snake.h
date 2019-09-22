@@ -12,10 +12,11 @@ class Snake {
 		~Snake();
 
 		std::vector<Location> & getLocations();
+		bool onSnake(int x, int y);
 
 	private:
 		std::vector<Location> locations;
-		sf::Color color;
+		sf::Color color = sf::Color::Transparent;
 
 };
 

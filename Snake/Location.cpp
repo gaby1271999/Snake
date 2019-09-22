@@ -11,10 +11,18 @@ Location::Location(int x, int y) {
 Location::~Location() {
 }
 
-int Location::getXPos() {
+int & Location::getXPos() {
 	return xPos;
 }
 
-int Location::getYPos() {
+int & Location::getYPos() {
 	return yPos;
+}
+
+void Location::setXPos(int x) {
+	xPos = x;
+}
+
+void Location::setYPos(int y) {
+	yPos = y;
 }
